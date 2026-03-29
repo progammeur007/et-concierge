@@ -1,0 +1,456 @@
+{
+  "entities": {
+    "brand": {
+      "name": "Economic Times",
+      "aliases": ["ET", "ET Online", "economictimes.com"],
+      "parent_org": "Bennett, Coleman & Co. Ltd. (Times Group)",
+      "headquarters": "Mumbai, India",
+      "primary_language": "English",
+      "tagline": "The Economic Times — India's No. 1 Business News Brand",
+      "core_value_prop": "ET goes beyond news — it provides tools, subscriptions, education, events, and partner services to help Indians make smarter financial and business decisions."
+    }
+  },
+
+  "products": [
+    {
+      "id": "et_prime_gold",
+      "name": "ET Prime (Gold)",
+      "category": "Subscription",
+      "aliases": ["ET Prime", "Prime Gold", "ET subscription"],
+      "tagline": "India's most trusted business intelligence subscription",
+      "pricing": {
+        "monthly": "₹199/month",
+        "quarterly": "₹499/quarter",
+        "annual": "₹999/year",
+        "student_discount": "50% off with valid ID"
+      },
+      "features": [
+        "4,000+ in-depth stock research reports",
+        "Big Bull Portfolio — tracks positions of top investors like Rakesh Jhunjhunwala legacy portfolios",
+        "Stock Analyzer — fundamental + technical scoring",
+        "95% ad-free reading experience",
+        "Exclusive long-form journalism and investigative pieces",
+        "Sector deep-dives and thematic research",
+        "Access to ET GrandMasters video library (120+ lessons)",
+        "Priority access to ET events and summits",
+        "Offline article reading via app",
+        "Personalized news feed and alert system"
+      ],
+      "benefits": [
+        "Make informed investment decisions backed by research",
+        "Save time — curated intelligence instead of scattered news",
+        "Track India's most successful investor portfolios",
+        "Distraction-free reading"
+      ],
+      "target_persona": ["HNI", "Long-term Investor", "Serious Researcher", "Fund Manager", "Equity Analyst", "Family Office"],
+      "not_for": ["Casual news readers who don't invest", "Users who only want real-time trading signals"],
+      "faq": [
+        { "q": "What is ET Prime?", "a": "ET Prime is ET's paid subscription that gives you ad-free access, deep stock research, Big Bull Portfolio tracking, and exclusive business journalism." },
+        { "q": "Can I try before I pay?", "a": "Yes, ET Prime offers a 7-day free trial for new users." },
+        { "q": "Is ET Prime different from ET Markets?", "a": "Yes. ET Prime is for reading, research, and long-term investors. ET Markets app is for active traders and real-time market tracking." },
+        { "q": "What is Big Bull Portfolio?", "a": "It tracks publicly disclosed positions of India's top legendary investors so you can see where they are investing." }
+      ],
+      "cross_sell": ["et_grandmasters", "et_markets_app", "axis_bank_card"]
+    },
+
+    {
+      "id": "et_prime_platinum",
+      "name": "ET Prime (Platinum)",
+      "category": "Subscription",
+      "aliases": ["Platinum plan"],
+      "pricing": {
+        "annual": "₹2,999/year"
+      },
+      "features": [
+        "Everything in Gold",
+        "Unlimited access to ET GrandMasters masterclasses",
+        "1-on-1 expert consultation sessions (limited slots)",
+        "Early access to ET events with priority seating",
+        "Exclusive Platinum community and networking group",
+        "Monthly curated investment strategy report by editors"
+      ],
+      "target_persona": ["HNI", "UHNWI", "Serious long-term investor", "Business owner"],
+      "cross_sell": ["masterclass_ram_charan", "maharashtra_summit"]
+    },
+
+    {
+      "id": "et_markets_app",
+      "name": "ET Markets App",
+      "category": "Tool / App",
+      "aliases": ["ET Markets", "markets app", "ET trading app"],
+      "platform": ["iOS", "Android", "Web"],
+      "pricing": {
+        "base": "Free",
+        "premium_features": "Bundled with ET Prime subscription"
+      },
+      "features": [
+        "Live NSE and BSE quotes and order book depth",
+        "AI-driven chart pattern recognition (head & shoulders, cup & handle, etc.)",
+        "Technical screeners — filter stocks by RSI, MACD, Bollinger Bands, etc.",
+        "Upside Radar — proprietary algorithm spotting potential breakout stocks",
+        "F&O (Futures & Options) tracker with open interest analysis",
+        "Mutual fund performance comparison",
+        "IPO tracker with subscription status and GMP (grey market premium)",
+        "Global market indices — Dow, NASDAQ, Nifty 50, SGX Nifty",
+        "Currency rates — USD/INR, EUR/INR in real time",
+        "Commodity prices — Gold, Silver, Crude Oil",
+        "Portfolio P&L tracker with XIRR calculation",
+        "Custom watchlists with price alerts",
+        "Broker integration for seamless trading (select brokers)",
+        "Voice search for stock quotes"
+      ],
+      "benefits": [
+        "Everything a trader needs in one app",
+        "AI takes the guesswork out of chart reading",
+        "Set-and-forget price alerts so you never miss a move"
+      ],
+      "target_persona": ["Active Trader", "Day Trader", "Swing Trader", "Beginner Investor", "F&O Trader"],
+      "faq": [
+        { "q": "Is ET Markets app free?", "a": "The core app is free. Advanced screeners and AI features may require ET Prime subscription." },
+        { "q": "Can I buy stocks directly from ET Markets?", "a": "ET Markets integrates with select brokers. You can place orders via the linked broker account." },
+        { "q": "What is Upside Radar?", "a": "Upside Radar is ET's proprietary algorithm that scans all listed stocks and flags those with high short-term upside potential based on technicals and volume patterns." }
+      ],
+      "cross_sell": ["et_prime_gold", "et_money_earn"]
+    },
+
+    {
+      "id": "et_money_earn",
+      "name": "ET Money Earn",
+      "category": "Investment Product",
+      "aliases": ["ET Money", "ET Earn", "fixed income ET"],
+      "pricing": {
+        "minimum_investment": "₹10,000",
+        "target_return": "Up to 9% p.a.",
+        "tenure": "Flexible — 7 days to 36 months"
+      },
+      "features": [
+        "Fixed income investment products including bonds, NCDs, and fixed deposits",
+        "Target returns up to 9% per annum",
+        "Short, medium, and long tenure options",
+        "Curated credit-rated instruments only",
+        "SEBI-regulated investment platform",
+        "Mobile-first onboarding — KYC in minutes",
+        "Auto-renewal and SIP options for fixed income",
+        "Dashboard showing accrued interest in real time"
+      ],
+      "benefits": [
+        "Better returns than a savings account without equity risk",
+        "Ideal for emergency funds and short-term goals",
+        "Low volatility — not linked to stock market swings"
+      ],
+      "target_persona": ["Conservative Investor", "Emergency Fund Builder", "Retiree", "First-time Investor", "Salaried professional with idle savings"],
+      "faq": [
+        { "q": "Is ET Money safe?", "a": "ET Money is SEBI-registered and features only credit-rated instruments. However, all investments carry risk and are not bank-guaranteed." },
+        { "q": "What is the minimum amount to invest?", "a": "You can start with as little as ₹10,000." },
+        { "q": "How is this different from a fixed deposit?", "a": "ET Money Earn offers a curated marketplace with potentially higher yields than traditional FDs, along with flexibility in tenure." }
+      ],
+      "cross_sell": ["et_prime_gold", "et_markets_app"]
+    },
+
+    {
+      "id": "et_grandmasters",
+      "name": "ET GrandMasters",
+      "category": "Learning Subscription",
+      "aliases": ["GrandMasters", "ET video lessons", "ET business education"],
+      "pricing": {
+        "gold_plan": "₹4,999 for 12 months",
+        "student_plan": "Free with ID verification",
+        "included_with_prime_platinum": true
+      },
+      "features": [
+        "120+ curated video lessons from 20+ top business leaders",
+        "New masterclasses added monthly",
+        "Covers: leadership, entrepreneurship, investing, marketing, HR, AI, negotiation",
+        "Downloadable study notes and summary PDFs",
+        "Certificate of completion for each module",
+        "Live Q&A sessions with instructors (select courses)"
+      ],
+      "target_persona": ["Working Professional", "MBA Student", "Entrepreneur", "Manager", "Young Professional"],
+      "faq": [
+        { "q": "What is ET GrandMasters?", "a": "ET GrandMasters is a video learning platform with 120+ lessons taught by India's top CEOs, founders, and industry experts. It covers business, investing, leadership, and more." },
+        { "q": "Is it free for students?", "a": "Yes, students can access ET GrandMasters free with a valid college ID." }
+      ],
+      "cross_sell": ["et_prime_platinum", "masterclass_genai_hr"]
+    }
+  ],
+
+  "events": [
+    {
+      "id": "maharashtra_summit_2026",
+      "name": "Maharashtra Business Summit 2026",
+      "date": "2026-04-23",
+      "location": "Mumbai, Maharashtra",
+      "format": "In-person conference",
+      "expected_attendance": "500+ delegates",
+      "focus_sectors": ["Infrastructure", "Green Energy", "Fintech", "Manufacturing", "Urban Development"],
+      "speakers": ["State Government Officials", "Industry CEOs", "Policy Makers", "Infrastructure Investors"],
+      "target_persona": ["Founder", "Policy Maker", "Industrialist", "Investor", "Startup Founder"],
+      "registration": {
+        "delegate_pass": "₹15,000 per person",
+        "startup_pass": "₹5,000 (for registered startups)",
+        "media_accreditation": "Free (apply via ET)"
+      },
+      "benefits": [
+        "Direct access to Maharashtra's business ecosystem",
+        "Networking with top investors and government officials",
+        "Pre-scheduled 1-on-1 business meetings available"
+      ],
+      "faq": [
+        { "q": "Who should attend the Maharashtra Business Summit?", "a": "Founders, industrialists, investors, and policy makers interested in doing business in Maharashtra — especially in infrastructure, green energy, and fintech." }
+      ]
+    },
+
+    {
+      "id": "ai_summer_camp_2026",
+      "name": "AI Summer Camp for Students",
+      "date": "2026-06-01",
+      "format": "Online Masterclass Series",
+      "duration": "4 weeks",
+      "focus": ["Generative AI skills", "Prompt engineering", "AI tools for productivity", "Future of work"],
+      "target_persona": ["College Student", "Young Professional", "Recent Graduate", "School Student (Grade 10+)"],
+      "pricing": {
+        "early_bird": "₹1,999",
+        "standard": "₹2,999",
+        "student_group": "₹999 per person for groups of 5+"
+      },
+      "faq": [
+        { "q": "Do I need a technical background for the AI Summer Camp?", "a": "No. The camp is designed for all students regardless of coding background." }
+      ],
+      "cross_sell": ["et_grandmasters", "masterclass_ai_business_leaders"]
+    }
+  ],
+
+  "masterclasses": [
+    {
+      "id": "masterclass_ram_charan",
+      "name": "Strategic Leadership for Exponential Business Growth",
+      "instructor": "Dr. Ram Charan",
+      "instructor_bio": "Global advisor to Fortune 500 CEOs; author of 25+ bestselling books on business execution",
+      "date": "2026-05-20 to 2026-05-22",
+      "location": "Goa (Residential — stay included)",
+      "format": "In-person residential cohort",
+      "cohort_size": "30 leaders maximum",
+      "pricing": {
+        "individual": "₹1,50,000 + GST",
+        "corporate_group_5": "₹6,00,000 + GST",
+        "includes": ["Stay", "Meals", "Workshop material", "Post-program 1-on-1 with Dr. Charan's team"]
+      },
+      "focus": ["Business scaling frameworks", "Amazon management system", "Growth mindset for leaders", "CEO decision-making under uncertainty"],
+      "target_persona": ["CEOs", "Co-founders", "Managing Directors", "Business Leaders", "C-suite executives"],
+      "faq": [
+        { "q": "Who is Dr. Ram Charan?", "a": "Dr. Ram Charan is one of the world's most sought-after business advisors, known for advising CEOs of GE, Bank of America, and Novartis. He's authored books like 'Execution' and 'The Attacker's Advantage'." },
+        { "q": "Is accommodation included?", "a": "Yes, the residential masterclass in Goa includes accommodation and meals for all 3 days." }
+      ],
+      "cross_sell": ["et_prime_platinum", "maharashtra_summit_2026"]
+    },
+
+    {
+      "id": "masterclass_genai_hr",
+      "name": "Applications of Generative AI in HR",
+      "instructor": "Prof. Sriram Iyer",
+      "date": "2026-06-18 to 2026-06-19",
+      "format": "Virtual live (2 days)",
+      "pricing": {
+        "individual": "₹25,000 + GST",
+        "corporate_bulk_10": "₹2,00,000 + GST"
+      },
+      "focus": ["AI tools for recruiting and screening", "Automating performance reviews", "AI-driven L&D", "HR analytics and dashboards", "Ethical AI in people management"],
+      "target_persona": ["HR Professionals", "CHROs", "HR Managers", "L&D Heads", "People Operations"],
+      "faq": [
+        { "q": "Do I need to know AI to attend this masterclass?", "a": "No prior AI knowledge is needed. Prof. Iyer starts from basics and moves to applied use cases specifically for HR functions." }
+      ],
+      "cross_sell": ["masterclass_ai_business_leaders", "et_grandmasters"]
+    },
+
+    {
+      "id": "masterclass_ai_business_leaders",
+      "name": "AI for Business Leaders",
+      "format": "Recorded / Self-paced",
+      "pricing": {
+        "individual": "₹30,000 + GST",
+        "lifetime_access": true
+      },
+      "focus": ["No-code AI tools", "Building AI strategy for your business", "Automating operations with AI", "AI in supply chain, marketing, finance", "Measuring ROI of AI initiatives"],
+      "target_persona": ["Managers", "Corporate Leaders", "Department Heads", "Senior Executives"],
+      "faq": [
+        { "q": "Is this a live course?", "a": "This is a fully self-paced recorded course. You get lifetime access and can learn at your own pace." }
+      ],
+      "cross_sell": ["masterclass_genai_hr", "ai_summer_camp_2026"]
+    },
+
+    {
+      "id": "masterclass_negotiation",
+      "name": "Business Negotiation Strategies for Success",
+      "instructor": "Sandeep Das",
+      "date": "2026-05-08",
+      "location": "Mumbai",
+      "format": "In-person full-day workshop",
+      "pricing": {
+        "early_bird": "₹12,000 + GST",
+        "standard": "₹15,000 + GST"
+      },
+      "focus": ["High-stakes negotiation frameworks", "BATNA and ZOPA strategies", "Dealing with difficult counterparts", "Negotiation in M&A and vendor contracts", "Body language and persuasion techniques"],
+      "target_persona": ["Sales Heads", "Procurement Managers", "Entrepreneurs", "Lawyers", "Business Development Leaders"],
+      "faq": [
+        { "q": "What industries is this negotiation workshop relevant for?", "a": "The workshop is relevant across industries — sales, procurement, M&A, startups, and corporate leadership." }
+      ],
+      "cross_sell": ["masterclass_ram_charan", "et_grandmasters"]
+    },
+
+    {
+      "id": "masterclass_ai_marketing",
+      "name": "AI in Marketing for Leaders",
+      "format": "Recorded / Self-paced",
+      "pricing": {
+        "individual": "₹35,000 + GST"
+      },
+      "focus": ["AI-driven content at scale", "Personalization engines", "Marketing attribution with AI", "Programmatic advertising fundamentals", "Building a marketing AI stack"],
+      "target_persona": ["Marketing Heads", "CMOs", "Brand Managers", "Digital Marketing Directors"],
+      "faq": [
+        { "q": "How is this different from a digital marketing course?", "a": "This is specifically focused on using AI to scale and optimize marketing — not a basics-of-digital-marketing course. It assumes you're already in a marketing leadership role." }
+      ],
+      "cross_sell": ["masterclass_ai_business_leaders", "et_grandmasters"]
+    }
+  ],
+
+  "partner_services": [
+    {
+      "id": "axis_bank_card",
+      "name": "Axis Bank Premium Credit Card",
+      "category": "Credit Card",
+      "aliases": ["Axis ET card", "co-branded credit card"],
+      "perks": [
+        "Complimentary domestic airport lounge access (8 visits/year)",
+        "International lounge access via Priority Pass (2 visits/year)",
+        "ET Prime subscription at discounted rate (₹499 off annual plan)",
+        "2X reward points on ET platform purchases",
+        "Fuel surcharge waiver at all fuel stations",
+        "Zero forex markup on international transactions",
+        "Complimentary travel insurance up to ₹50 lakhs"
+      ],
+      "eligibility": {
+        "minimum_income": "₹6 LPA",
+        "credit_score": "720+",
+        "documents": ["PAN", "Aadhaar", "Latest 3 months salary slip"]
+      },
+      "target_persona": ["Frequent Traveler", "Salaried Professional", "Business Traveler", "ET Prime Subscriber"],
+      "faq": [
+        { "q": "How do I apply for the Axis Bank ET card?", "a": "You can apply directly from the ET website or Axis Bank branch. Eligibility requires a minimum annual income of ₹6 LPA and a credit score of 720 or above." },
+        { "q": "Do I get ET Prime free with the Axis card?", "a": "You get a discounted ET Prime subscription — ₹499 off the annual plan — not a free subscription." }
+      ],
+      "cross_sell": ["et_prime_gold", "et_prime_platinum"]
+    },
+
+    {
+      "id": "partner_insurance",
+      "name": "ET Partner Insurance Marketplace",
+      "category": "Insurance",
+      "description": "ET partners with leading insurers to offer curated health, term life, and motor insurance products with ET Prime discounts.",
+      "products_available": ["Term Life Insurance", "Health Insurance (individual and family floater)", "Motor Insurance", "Travel Insurance"],
+      "target_persona": ["Family", "Salaried Professional", "Business Owner", "NRI"],
+      "faq": [
+        { "q": "Does ET sell insurance?", "a": "ET acts as an aggregator/partner marketplace. You compare and purchase insurance from partner insurers through the ET platform." }
+      ]
+    },
+
+    {
+      "id": "partner_loans",
+      "name": "ET Partner Loan Marketplace",
+      "category": "Lending",
+      "description": "Personal loans, home loans, and business loans from partner NBFCs and banks, accessible via ET Money.",
+      "loan_types": ["Personal Loan", "Home Loan", "Business Loan", "Loan Against Mutual Funds"],
+      "target_persona": ["Salaried Professional", "MSME Owner", "Home Buyer"],
+      "faq": [
+        { "q": "Can I get a loan through ET?", "a": "Yes, through ET Money's partner marketplace you can compare and apply for personal, home, and business loans from partner lenders." }
+      ]
+    }
+  ],
+
+  "intent_routing": [
+    {
+      "user_intent": "I want to invest safely with good returns",
+      "recommended_products": ["et_money_earn"],
+      "follow_up_question": "How much are you looking to invest and for how long?"
+    },
+    {
+      "user_intent": "I want to track the stock market live",
+      "recommended_products": ["et_markets_app"],
+      "follow_up_question": "Are you a day trader or long-term investor?"
+    },
+    {
+      "user_intent": "I want deep research on stocks before investing",
+      "recommended_products": ["et_prime_gold"],
+      "follow_up_question": "Are you interested in small-caps, large-caps, or specific sectors?"
+    },
+    {
+      "user_intent": "I want to learn business skills or leadership",
+      "recommended_products": ["et_grandmasters", "masterclass_ram_charan"],
+      "follow_up_question": "Are you looking for live workshops or self-paced courses?"
+    },
+    {
+      "user_intent": "I want to attend a business networking event",
+      "recommended_products": ["maharashtra_summit_2026"],
+      "follow_up_question": "Which industry are you from?"
+    },
+    {
+      "user_intent": "I'm an HR professional looking to use AI",
+      "recommended_products": ["masterclass_genai_hr", "et_grandmasters"],
+      "follow_up_question": null
+    },
+    {
+      "user_intent": "I travel frequently and want credit card benefits",
+      "recommended_products": ["axis_bank_card"],
+      "follow_up_question": "Do you currently have an ET Prime subscription?"
+    },
+    {
+      "user_intent": "I'm a student and want to learn AI",
+      "recommended_products": ["ai_summer_camp_2026", "et_grandmasters"],
+      "follow_up_question": null
+    },
+    {
+      "user_intent": "I'm a CEO wanting to scale my business",
+      "recommended_products": ["masterclass_ram_charan", "et_prime_platinum"],
+      "follow_up_question": "What stage is your business at?"
+    },
+    {
+      "user_intent": "What does ET offer besides news?",
+      "recommended_products": ["et_prime_gold", "et_markets_app", "et_money_earn", "et_grandmasters"],
+      "response_summary": "ET offers subscriptions for research, trading tools, fixed-income investments, masterclasses, live events, and partner financial services like credit cards and insurance."
+    }
+  ],
+
+  "cross_sell_graph": {
+    "et_prime_gold": ["et_grandmasters", "et_markets_app", "axis_bank_card"],
+    "et_prime_platinum": ["masterclass_ram_charan", "maharashtra_summit_2026"],
+    "et_markets_app": ["et_prime_gold", "et_money_earn"],
+    "et_money_earn": ["et_prime_gold", "et_markets_app"],
+    "et_grandmasters": ["et_prime_platinum", "masterclass_genai_hr", "masterclass_ai_marketing"],
+    "masterclass_ram_charan": ["et_prime_platinum", "maharashtra_summit_2026"],
+    "axis_bank_card": ["et_prime_gold", "et_prime_platinum"],
+    "ai_summer_camp_2026": ["et_grandmasters", "masterclass_ai_business_leaders"]
+  },
+
+  "pricing_summary": {
+    "free_products": ["et_markets_app (core)", "et_grandmasters (students with ID)"],
+    "under_5000": ["et_prime_gold (₹999/yr)", "et_grandmasters (₹4,999/yr)", "ai_summer_camp_early_bird (₹1,999)"],
+    "5000_to_30000": ["masterclass_negotiation (₹12,000)", "maharashtra_summit_startup (₹5,000)", "masterclass_genai_hr (₹25,000)", "masterclass_ai_business_leaders (₹30,000)"],
+    "premium": ["masterclass_ram_charan (₹1,50,000)", "et_prime_platinum (₹2,999/yr)"]
+  },
+
+  "voice_chatbot_hints": {
+    "disambiguation_pairs": [
+      { "terms": ["ET Prime", "ET Markets"], "clarification": "ET Prime is a subscription for research and long-form intelligence. ET Markets is the trading and live market data app. They are different products." },
+      { "terms": ["ET Money", "ET Markets"], "clarification": "ET Money Earn is for fixed-income investing with stable returns. ET Markets is for tracking stocks and trading." },
+      { "terms": ["Masterclass", "GrandMasters"], "clarification": "ET GrandMasters is the subscription video library. Masterclasses are individual paid live or recorded programs on specific topics." }
+    ],
+    "common_misspellings": ["Grandmaster", "ET prime", "ET market", "ET money earn", "Economic times prime"],
+    "numeric_facts": {
+      "et_prime_stock_reports": 4000,
+      "et_grandmasters_lessons": 120,
+      "et_grandmasters_leaders": 20,
+      "et_money_target_return_pct": 9,
+      "axis_card_lounge_domestic_visits": 8,
+      "ram_charan_cohort_size": 30
+    }
+  }
+}
